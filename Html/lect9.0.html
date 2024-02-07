@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Event Reginstration</h2>
+	<form>
+		<label for="f_name">Name:</label><br/>
+		<input type="text" id="f_name" name="f_name" required>
+		<br/>
+		<label for="email">Email ID:</label><br/>
+		<input type="email" id="email" name="email">
+		<br/>
+		<!-- patten attirbute in tel -->
+		<label for="phone_no">Phone</label><br/>
+		<input type="tel" id="phone_no" name="phone_no">
+		<br/><br/>
+		<label for="ocupation">Occupation:</label>
+		<select name="ocupation" id="ocupation">
+			<option value="student">Student</option>
+			<option value="professional">Professional</option>
+			<option value="other">Other</option>
+		</select>
+		<br/><br/>
+		<fieldset>
+			<legend>Topic of interest</legend>
+			<input type="checkbox" id="html">
+			<label for="html">HTML</label><br/>
+
+			<input type="checkbox" id="css">
+			<label for="css">CSS</label><br/>
+
+			<input type="checkbox" id="javascript">
+			<label for="javascript">JavaScript</label>
+		</fieldset>
+		<br/>
+		<label for="comments">Comments:</label><br/>
+		<textarea name="comments" id="comments" cols="30" rows="10" placeholder="Write Your Thought........."></textarea>
+		<!-- don't prefer this -->
+		<!-- <input type="Button" value="Register"> -->
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>

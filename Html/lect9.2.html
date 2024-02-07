@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Complex Form</h2>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="f_name">Name:</label>
+			<input type="text" id="f_name" name="f_name">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			<label for="phone_no">Phone:</label>
+			<input type="tel" id="phone_no" name="phone_no">
+			<label for="dob">Date of Birth</label>
+			<input type="date" id="dob" name="dob">
+
+			<p style="display:inline;">Gender</p>
+			<!-- <span>Gender</span> -->
+			<input type="radio" id="male" name="gender">
+			<label for="male">Male</label>
+
+			<input type="radio" id="female" name="gender">
+			<label for="female">Female</label>
+
+			<input type="radio" id="other" name="gender">
+			<label for="other">Other</label>
+			<label for="country">Country</label>
+			<select name="country" id="country">
+				<option value="uk">United kingdom</option>
+				<option value="india">India</option>
+				<option value="pakistan">Pakistan</option>
+				<option value="china">China</option>
+			</select>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>
+				<label for="street">Address Street</label>
+				<input type="text" id="street" name="street">
+
+				<label for="city">City</label>
+				<input type="text" id="city" name="city">
+
+				<label for="state">State</label>
+				<input type="text" id="state" name="state">
+
+				<label for="zip">Zip Code</label>
+				<input type="tel" id="zip" name="zip">
+			</legend>
+		</fieldset>
+		<fieldset>
+			<legend>Other Information</legend>
+			<label for="comments">Comments:</label>
+			<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+			<label for="apeal">I agree to the terms of service</label>
+			<input type="checkbox" id="apeal" name="apeal">
+		</fieldset>
+		<input type="Submit" value="Submit">
+	</form>
+</body>
+</html>

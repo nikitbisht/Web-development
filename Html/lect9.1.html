@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Job Application</h2>
+	<form>
+		<label for="f_name">Name:</label><br/>
+		<input type="text" id="f_name" name="f_name">
+		<br/>
+		<label for="email">Email:</label><br/>
+		<input type="email" id="email" name="email">
+		<br/>
+		<label for="phone_no">Phone:</label><br/>
+		<input type="tel" id="phone_no" name="phone_no">
+		<br/>
+		<label for="resume">Resume</label><br/>
+		<input type="File" id="resume" name="resume">
+		<br/><br/>
+		<label for="counter">Expreance(Year)</label><br/>
+		<input type="number" id="counter" name="counter" min="0" max="50">
+		<br/>
+		<fieldset>
+			<legend>Skill</legend>
+			<input type="checkbox" id="html" name="html">
+			<label for="html">Html</label><br/>
+
+			<input type="checkbox" id="css" name="css">
+			<label for="css">CSS</label><br/>
+			
+			<input type="checkbox" id="javascript" name="javascript">
+			<label for="javascript">JavaScript</label>
+		</fieldset>
+		<br/>
+		<label for="eduction">Higher Education</label>
+		<select name="eduction" id="eduction">
+			<option value="10">High School</option>
+			<option value="associate">Associate's Degree</option>
+			<option value="btech">Bachler's Degree</option>
+			<option value="Mtech">Master's Degree</option>
+		</select>
+		<br/><br/>
+		<fieldset>
+			<legend>Availablity</legend>
+			<input type="radio" id="fulltime" name="radio">
+			<label for="fulltime">Full-Time</label>
+			<br/>
+			<input type="radio" id="parttime" name="radio">
+			<label for="parttime">Part-Time</label>
+		</fieldset>
+		<br/>
+		<label for="comments">Additional Comments:</label><br/>
+		<textarea name="comments" id="comments" cols="30" rows="10"placeholder="Comment Now......"></textarea>
+		<input type="Submit" value="Student Application">
+	</form>
+</body>
+</html>

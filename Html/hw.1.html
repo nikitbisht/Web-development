@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Travel Reservation Form</h1>
+    <h3>*denotes mandotory</h3>
+    <form>
+      <label for="f_name">Full Name*:</label><br/>
+      <input type="text" name="f_name" id="f_name"placeholder="FirstName LastName" required/>
+      <br/>
+      <label for="email">Email Address*: </label><br/>
+      <input type="email" name="email" id="email"placeholder="Email_address" required/>
+      <br/>
+      <label for="tour">Select Tour Pakage*:</label><br/>
+      <select name="tour" id="tour" required >
+        <option value="goa" selected>Goa</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="banglor">Banglor</option>
+      </select>
+      <br/>
+      <label for="date">Arrival Date*:</label><br/>
+      <input type="date" name="date" id="date" required/>
+      <br/>
+      <label for="no_of_person">No of Person*:</label><br/>
+      <input type="number" name="no_of_person" id="no_of_person" placeholder="UNKNOWN_TYPE" required min="1" max="10"/>
+      
+      <p>What would you want to avail?*</p>
+      <label for="boarding">Boarding</label>
+      <input type="checkbox" name="avail" id="boarding"/>
+      <br/>
+      <label for="fooding">Fooding</label>
+      <input type="checkbox" name="avail" id="fooding" />
+      <br/>
+      <label for="sight_seeing">Sight Seeing</label>
+      <input type="checkbox" name="avail" id="sight_seeing"/>
+      <br/>
+      
+      <label for="coupon">Discount Coupon Code</label><br/>
+      <input type="text" name="coupon" id="coupon" placeholder="UNKNOWN_TYPE"/>
+      <br/>
+      <span>Terms and Conditions*</span><br/>
+      <input type="radio" name="conditions" id="agree" value="" required/>
+      <label for="agree">I Agree</label>
+      <input type="radio" name="conditions" id="disagree" value="" required/>
+      <label for="disagree">I Disagree</label>
+      <br/>
+      <input type="submit" name="complete" id="complete" value="Complete Reservation" />
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Novell Services Login</h2>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"/>
+        <br/><br/>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" value="" />
+        <br/><br/>
+        <label for="city">City of</label>
+        <input type="text" name="city" id="city" value="" />
+        <br/><br/>
+        <label for="employ">Employment</label>
+        <input type="text" name="employ" id="employ" value="" />
+        <br/><br/>
+        <label for="server">Web Server</label>
+        <select name="server" id="server">
+          <option value="Nginx">Nginx</option>
+          <option value="lighttpd">Lighttpd</option>
+          <option value="https">Https</option>
+          <option value="default" selected>-Chouse a Server-</option>
+        </select>
+        <br/><br/>
+        <p>Please Specify your role</p>
+        <input type="radio" name="role" id="admin" value="" />
+        <label for="admin">Admin</label>
+        <br/>
+        <input type="radio" name="role" id="engineer" value="" />
+        <label for="engineer">Engineer</label>
+        <br/>
+        <input type="radio" name="role" id="manager" value="" />
+        <label for="manager">Manager</label>
+        <br/>
+        <input type="radio" name="role" id="guest" value="" />
+        <label for="guest">Guest</label>
+        
+        <p>Single Sign-on to the following</p>
+        <input type="checkbox" name="mail" id="mail" value="" />
+        <label for="mail">Mail</label>
+        <br/>
+        <input type="checkbox" name="payroll" id="payroll" value="" />
+        <label for="payroll">Payroll</label>
+        <br/>
+        <input type="checkbox" name="self-servic" id="self-servic" value="" />
+        <label for="self-servic">Self-service</label>
+        <br/><br/>
+        <button type="buttion">Login</button>
+        <input type="reset" name="reset" id="reset" value="Reset" />
+    </form>
+  </body>
+</html> 
+

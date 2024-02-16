@@ -1,0 +1,32 @@
+*{
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+	box-sizing: border-box;
+}
+h2{
+	text-align: center;
+}
+figure{
+	text-align: center;
+	text-transform: uppercase;
+	padding: 2em;
+	margin: 0px;
+}
+figure img{
+	max-width: 100%;
+}
+#left{
+	float: left;
+	margin-left: 1em;
+}
+#right{
+	float: right;
+	margin-right: 1em;
+}
+.container{
+  background-color: white;
+  padding: 1em;
+  width: 65%;
+  margin: 0 auto;
+  border: 5px solid #E18728;
+}

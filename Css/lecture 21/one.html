@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+/*			width: 1000px;
+			height: 1000px;*/
+			margin: 2px;
+			padding: 2px;
+			border: solid black 2px;
+			background-color: beige;
+			
+			display: flex;
+		}
+		.item{
+			border: solid black 3px;
+			width: 200px;
+			height: 200px;
+			margin: 2px;
+			padding: 3px;
+		}
+
+		@media (min-width:640px){
+			.container{
+				flex-direction: row;
+			}
+		}
+
+		@media (max-width:640px) {
+			.container{
+				flex-direction: column;
+			}
+		}
+
+		#item1{
+			background-color: aquamarine;
+		}
+		#item2{
+			background-color: orange;
+		}
+		#item3{
+			background-color: blue;
+		}
+		#item4{
+			background-color: greenyellow;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1" class="item" >A</div>
+		<div id="item2" class="item">B</div>
+		<div id="item3" class="item" >C</div>
+		<div id="item4" class="item">D</div>
+	</div>
+</body>
+</html>

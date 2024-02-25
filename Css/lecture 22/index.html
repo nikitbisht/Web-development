@@ -1,0 +1,71 @@
+<!-- Shadows in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		:root{
+			--primary-color:brown;
+			--custom-width:330px;
+		}
+		.container{
+			background-color: beige;
+			height: 650px;
+			border: 2px solid black;
+			margin: 10px;
+			padding: 3px;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			border: 2px solid black;
+			background-color: aquamarine;
+
+/*			Custom variable*/
+/*			--primary-color:brown;
+			--custom-width:330px;*/
+
+			width: var(--custom-width);
+			height: 330px;
+			margin: 5px;
+			padding: 5px;
+/*			Shadow*/
+/*			box-shadow: 10px 10px brown;*/
+/*			box-shadow: 10px 10px 50px greenyellow;*/
+/*			box-shadow: 10px 15px 15px 10px brown;*/
+/*			box-shadow: inset 10px 15px 20px 10px brown;*/
+			box-shadow: 10px 15px 20px red, 20px 30px 30px greenyellow ;
+		}
+		img{
+			border: 2px solid black;
+			width: 100px;
+			height: 100px;
+		}
+		h2{
+/*			text-shadow: 3px 3px 2px white;*/
+/*			text-shadow: yellow 12px 14px 2px;*/
+/*			text-shadow: yellowgreen 12px 13px;*/
+/*			text-shadow: 13px 15px;*/
+
+/*Multiple text shadow in single text  red,yellow,blue*/
+			text-shadow: 5px 5px 1px red,8px 8px 1px yellow, 11px 11px 1px blue;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<img src="logo.png" alt="">
+			<h2>WellCome to Codehelp</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi delectus maiores tenetur consequuntur quas? Id ipsa repellendus odio, aliquam aliquid harum ab minima, omnis.</p>
+		</div>
+	</div>
+</body>
+</html>

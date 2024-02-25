@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100%;
+			width: 100%;
+		}
+		.container{
+			height: 100vh;
+			width: 100vw;
+			background-color: beige;
+			display: grid;
+			gap: 2rem;			
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			padding: 2rem;
+			overflow: asuto;
+		}
+		.Box{
+			background-color: grey;
+		}
+		.firstBox{
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			padding: 0.3rem;
+			column-gap: 0.5rem;
+			place-items: center;
+		}
+		.fbox{
+			height: 80%;
+			width: 90%;
+			background-color: orange;
+			border: 2px solid black;
+		}
+		.secondBox{
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+/*			row-gap: 0.3rem;*/
+
+		}
+		.sbox{
+			height: 100%;
+			width: 100%;
+			background-color: yellowgreen;
+			border: 2px solid black;
+		}
+		.s1box{
+			grid-column:span 2;
+		}
+		.s2box{
+			grid-row: span 2;
+		}
+
+		.thirdBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+/*			row-gap: 0.3rem;*/
+
+		}
+		.tbox{
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			border: 2px solid black;
+		}
+		.t1box{
+			grid-column:span 3;
+		}
+		.t3box{
+			grid-column: span 2;
+		}
+		.t4box{
+			grid-column:span 3;
+		}
+
+
+		.fourthBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+/*			row-gap: 0.3rem;*/
+
+		}
+		.fobox{
+			height: 100%;
+			width: 100%;
+			border: 2px solid black;
+			background-color: darkred;
+		}
+		.f1box{
+			grid-column:span 2;
+		}
+		.f2box{
+			grid-column: span 2;
+		}
+		.f4box{
+			grid-column:span 3;
+		}
+		.f5box{
+			grid-column: span 4;
+		}
+
+
+		.fiveBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(6, 1fr);
+			padding: 0.5rem;
+			column-gap: 0.5rem;
+			place-items: center;
+
+		}
+		.fibox{
+			height: 80%;
+			width: 90%;
+			background-color: aqua;
+			border: 2px solid black;
+		}
+
+		.sixthBox{
+			display: grid;
+			grid-template-rows: repeat(5, 1fr);
+			grid-template-columns: repeat(4, 1fr);
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.sibox{
+			height: 100%;
+			width: 100%;
+			border: 1px solid whitesmoke;
+			background-color: black;
+		}
+		.si1box{
+			grid-column:span 2;
+		}
+		.si7box{
+			grid-row:span 2;
+			grid-column: span 2;
+		}
+		.si11box{
+			grid-column:span 3;
+		}
+
+
+		.seventhBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.sebox{
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			border: 2px solid black;
+		}
+		.se1box, .se2box{
+			height: 100%;
+		}
+		.se3box, .se4box{
+			grid-row: span 2;
+			height: 100%;
+		}
+		.se4box{
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: repeat(2, 1fr);
+			padding: 0.4rem;
+			gap: 0.5rem;
+			place-items: centre;
+		}
+		.sc1box, .sc2box, .sc3box{
+			height: 100%;
+			width: 100%;
+			border: 3px solid black;
+			background-color: blue;
+		}
+		.sc1box{
+			grid-column: span 2;
+		}
+
+		.eightBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(5, 1fr);
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.eibox{
+			height: 100%;
+			width: 100%;
+			background-color: lightpink;
+			border: 2px solid black;
+		}
+		.e8box{
+			grid-column:span 3;
+		}
+		.e9box{
+			grid-column: span 5;
+		}
+
+		.nineBox{
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.nibox{
+			height: 100%;
+			width: 100%;
+			background-color: palegreen;
+			border: 2px solid black;
+		}
+		.n1box{
+			grid-column:span 3;
+		}
+		.n2box{
+			grid-row: span 2;
+		}
+		.n3box{
+			grid-column: span 2;
+		}
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<div class="firstBox Box">
+			<div class="fbox"></div>
+			<div class="fbox"></div>
+			<div class="fbox"></div>
+			<div class="fbox"></div>
+			<div class="fbox"></div>
+			<div class="fbox"></div>
+		</div>
+		<div class="secondBox Box">
+			<div class="sbox s1box"></div>
+			<div class="sbox s2box"></div>
+			<div class="sbox"></div>
+			<div class="sbox"></div>
+		</div>
+		<div class="thirdBox Box">
+			<div class="tbox t1box"></div>
+			<div class="tbox "></div>
+			<div class="tbox t3box"></div>
+			<div class="tbox t4box"></div>
+		</div>
+		<div class="fourthBox Box">
+			<div class="fobox f1box"></div>
+			<div class="fobox f2box"></div>
+			<div class="fobox f3box"></div>
+			<div class="fobox f4box"></div>
+			<div class="fobox f5box"></div>
+		</div>
+		<div class="fiveBox Box">
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+			<div class="fibox"></div>
+		</div>
+		<div class="sixthBox Box">
+			<div class="sibox si1box"></div>
+			<div class="sibox si2box"></div>
+			<div class="sibox si3box"></div>
+			<div class="sibox si4box"></div>
+			<div class="sibox si5box"></div>
+			<div class="sibox si6box"></div>
+			<div class="sibox si7box"></div>
+			<div class="sibox si8box"></div>
+			<div class="sibox si9box"></div>
+			<div class="sibox si10box"></div>
+			<div class="sibox si11box"></div>
+			<div class="sibox si12box"></div>
+		</div>
+
+		<div class="seventhBox Box">
+			<div class="sebox se1box"></div>
+			<div class="sebox se2box"></div>
+			<div class="sebox se3box"></div>
+			<div class="sebox se4box">
+				<div class="sc1box"></div>
+				<div class="sc2box"></div>
+				<div class="sc3box"></div>
+			</div>
+		</div>
+
+			<div class="eightBox Box">
+			<div class="eibox e1box"></div>
+			<div class="eibox e2box"></div>
+			<div class="eibox e3box"></div>
+			<div class="eibox e4box"></div>
+			<div class="eibox e5box"></div>
+			<div class="eibox e6box"></div>
+			<div class="eibox e7box"></div>
+			<div class="eibox e8box"></div>
+			<div class="eibox e9box"></div>
+		</div>
+		<div class="nineBox Box">
+			<div class="nibox n1box"></div>
+			<div class="nibox n2box"></div>
+			<div class="nibox n3box"></div>
+			<div class="nibox n4box"></div>
+			<div class="nibox n5box"></div>
+		</div>
+	</div>
+</body>
+</html>

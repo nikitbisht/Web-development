@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cards</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.container{
+			width: 100vw;
+			height: 100vh;
+			background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.card{
+			width: 50%;
+			height: 50%;
+			background-color: white;
+			border-radius: 05px;
+			box-shadow: 0px 0px 20px black;
+			display: flex;
+			justify-content: space-between;
+		}
+		.leftBox{
+			width: 50%;
+			height: 100%;
+			border-top-left-radius: 05px;
+			border-bottom-left-radius: 05px;
+			background-color: purple;
+			text-align: center;
+		}
+		.rightBox{
+			background-image: url("icon.jpg");
+			background-position: center;
+			background-size: cover;
+			border-top-right-radius: 05px;
+			border-bottom-right-radius: 05px;
+			width: 50%;
+		}
+		.lbox{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			color: white;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.lastBox{
+			display: flex;
+			justify-content: space-around;
+		}
+		h2{
+			font-size: 1.8rem;
+		}
+		.bold{
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		#para{
+			padding-left: 6%;
+			padding-right: 6%;
+			font-size: 01em;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="leftBox">
+				<div class="lbox">
+					<h2>Get insight that your Bussiness grow</h2>
+					<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur sunt temporibus iure, id culpa, ipsa non distinctio in reiciendis!</p>
+					<div class="lastBox">
+						<div>
+							<p class="bold">10K</p>
+							<p>Comment</p>
+						</div>
+						<div>
+							<p class="bold">214</p>
+							<p>Post view</p>
+						</div>
+						<div>
+							<p class="bold">12M+</p>
+							<p>Views</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightBox">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

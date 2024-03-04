@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100%;
+			width: 100%;
+		}
+		.container{
+			height: 100vh;
+			width: 100vw;
+			background-color: beige;
+			display: grid;
+			gap: 2rem;			
+			grid-template-areas: "first second third" "fourth five six" "seven eight nine";
+			padding: 2rem;
+			overflow: asuto;
+		}
+		.Box{
+			background-color: grey;
+		}
+		.firstBox{
+			grid-area: first;
+			display: grid;
+			grid-template-areas: "fstbox1 fstbox2 fstbox3" "fstbox4 fstbox5 fstbox6";
+			padding: 0.3rem;
+			column-gap: 0.5rem;
+			place-items: center;
+		}
+		.fbox{
+			height: 80%;
+			width: 90%;
+			background-color: orange;
+			border: 2px solid black;
+		}
+		#fstbox1{
+			grid-area: fstbox1;
+		}
+		#fstbox2{
+			grid-area: fstbox2;
+		}
+		#fstbox3{
+			grid-area: fstbox3;
+		}
+		#fstbox4{
+			grid-area: fstbox4;
+		}
+		#fstbox5{
+			grid-area: fstbox5;
+		}
+		#fstbox6{
+			grid-area: fstbox6;
+		}
+
+
+		.secondBox{
+			grid-area: second;
+			display: grid;
+			grid-template-areas: "s1box1 s1box1 s1box2" "s1box3 s1box4 s1box2";
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+		}
+		.sbox{
+			height: 100%;
+			width: 100%;
+			background-color: yellowgreen;
+			border: 2px solid black;
+		}
+
+		#s1box1{
+			grid-area: s1box1;
+		}
+		#s1box2{
+			grid-area: s1box2;
+		}
+		#s1box3{
+			grid-area: s1box3;
+		}
+		#s1box4{
+			grid-area: s1box4;
+		}
+
+		.thirdBox{
+			grid-area: third;
+			display: grid;
+			grid-template-areas: "t1box t1box t1box""t2box t3box t3box" "t4box t4box t4box";
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+
+		}
+		.tbox{
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			border: 2px solid black;
+		}
+		#t1box{
+			grid-area: t1box;
+		}
+		#t2box{
+			grid-area: t2box;
+		}
+		#t3box{
+			grid-area: t3box;
+		}
+		#t4box{
+			grid-area: t4box;
+		}
+
+
+		.fourthBox{
+			grid-area: fourth;
+			display: grid;
+			grid-template-areas: "f1box f1box f2box f2box" "f3box f4box f4box f4box" "f5box f5box f5box f5box";
+			padding: 1rem;
+			gap: 1rem;
+			place-items: center;
+/*			row-gap: 0.3rem;*/
+
+		}
+		.fobox{
+			height: 100%;
+			width: 100%;
+			border: 2px solid black;
+			background-color: darkred;
+		}
+		#f1box{
+			grid-area: f1box;
+		}	
+		#f2box{
+			grid-area: f2box;
+		}
+		#f3box{
+			grid-area: f3box;
+		}
+		#f4box{
+			grid-area: f4box;
+		}
+		#f5box{
+			grid-area: f5box;
+		}
+
+
+		.fiveBox{
+			grid-area: five;
+			display: grid;
+			grid-template-areas: "fibox1 fibox2 fibox3 fibox4 fibox5 fibox6" "fibox7 fibox8 fibox9 fibox10 fibox11 fibox12" "fibox13 fibox14 fibox15 fibox16 fibox17 fibox18 ";
+			padding: 0.5rem;
+			column-gap: 0.5rem;
+			place-items: center;
+
+		}
+		.fibox{
+			height: 80%;
+			width: 90%;
+			background-color: aqua;
+			border: 2px solid black;
+		}
+		#fibox1{
+			grid-area: fibox1;
+		}
+		#fibox2{
+			grid-area: fibox2;
+		}
+		#fibox3{
+			grid-area: fibox3;
+		}
+		#fibox4{
+			grid-area: fibox4;
+		}
+		#fibox5{
+			grid-area: fibox5;
+		}
+		#fibox6{
+			grid-area: fibox6;
+		}
+		#fibox7{
+			grid-area: fibox7;
+		}
+		#fibox8{
+			grid-area: fibox8;
+		}
+		#fibox9{
+			grid-area: fibox9;
+		}
+		#fibox10{
+			grid-area: fibox10;
+		}
+		#fibox11{
+			grid-area: fibox11;
+		}
+		#fibox12{
+			grid-area: fibox12;
+		}
+		#fibox13{
+			grid-area: fibox13;
+		}
+		#fibox14{
+			grid-area: fibox14;
+		}
+		#fibox15{
+			grid-area: fibox15;
+		}
+		#fibox16{
+			grid-area: fibox16;
+		}
+		#fibox17{
+			grid-area: fibox17;
+		}
+		#fibox18{
+			grid-area: fibox18;
+		}
+
+.sixthBox {
+    grid-area: six;
+    display: grid;
+    grid-template-areas: 
+        "si1box si1box si2box si3box" 
+        "si4box si5box si6box si6box" 
+        "si7box si7box si8box si9box" 
+        "si7box si7box si10box si10box" 
+        "si11box si11box si11box si12box";
+    padding: 1rem;
+    gap: 0.6rem;
+    place-items: center;
+}
+
+		.sibox{
+			height: 100%;
+			width: 100%;
+			border: 1px solid whitesmoke;
+			background-color: black;
+		}
+		#si1box{
+			grid-area: si1box;
+		}
+		#si2box{
+			grid-area: si2box;
+		}
+		#si3box{
+			grid-area: si3box;
+		}
+		#si4box{
+			grid-area: si4box;
+		}
+		#si5box{
+			grid-area: si5box;
+		}
+		#si6box{
+			grid-area: si6box;
+		}
+		#si7box{
+			grid-area: si7box;
+		}
+		#si8box{
+			grid-area: si8box;
+		}
+		#si9box{
+			grid-area: si9box;
+		}
+		#si10box{
+			grid-area: si10box;
+		}
+		#si11box{
+			grid-area: si11box;
+		}
+		#si12box{
+			grid-area: si12box;
+		}
+
+
+		.seventhBox{
+			grid-area: seven;
+			display: grid;
+			grid-template-areas: "se1box se2box" "se3box se4box";
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.sebox{
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			border: 2px solid black;
+		}
+		#se1box{
+			grid-area: se1box;
+		}
+		#se2box{
+			grid-area: se2box;
+		}
+		#se3box{
+			grid-area: se3box;
+		}
+		#se4box{
+			grid-area: se4box;
+			display: grid;
+			grid-template-areas: "sc1box sc1box""sc2box sc3box";
+			padding: 0.4rem;
+			gap: 0.5rem;
+			place-items: centre;
+		}
+		#sc1box, #sc2box, #sc3box{
+			height: 100%;
+			width: 100%;
+			border: 2px solid grey;
+			background-color: blue;
+		}
+		#sc1box{
+			grid-area: sc1box;
+		}
+		#sc2box{
+			grid-area: sc2box;
+		}
+		#sc3box{
+			grid-area: sc3box;
+		}
+
+		.eightBox{
+			grid-area: eight;
+			display: grid;
+			grid-template-areas: "e1box e2box e3box e4box e5box" "e6box e7box e8box e8box e8box" "e9box e9box e9box e9box e9box ";
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.eibox{
+			height: 100%;
+			width: 100%;
+			background-color: lightpink;
+			border: 2px solid black;
+		}
+		#e1box{
+			grid-area: e1box;
+		}
+		#e2box{
+			grid-area: e2box;
+		}
+		#e3box{
+			grid-area: e3box;
+		}
+		#e4box{
+			grid-area: e4box;
+		}
+		#e5box{
+			grid-area: e5box;
+		}
+		#e6box{
+			grid-area: e6box;
+		}
+		#e7box{
+			grid-area: e7box;
+		}
+		#e8box{
+			grid-area: e8box;
+		}
+		#e9box{
+			grid-area: e9box;
+		}
+
+		.nineBox{
+			grid-area: nine;
+			display: grid;
+			grid-template-areas: "n1box n1box n1box" "n2box n3box n3box" "n2box n4box n5box";
+			padding: 1rem;
+			gap: 0.6rem;
+			place-items: center;
+		}
+		.nibox{
+			height: 100%;
+			width: 100%;
+			background-color: palegreen;
+			border: 2px solid black;
+		}
+		#n1box{
+			grid-area: n1box;
+		}
+		#n2box{
+			grid-area: n2box;
+		}
+		#n3box{
+			grid-area: n3box;
+		}
+		#n4box{
+			grid-area: n4box;
+		}
+		#n5box{
+			grid-area: n5box;
+		}
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<div class="firstBox Box">
+			<div class="fbox" id="fstbox1"></div>
+			<div class="fbox" id="fstbox2"></div>
+			<div class="fbox" id="fstbox3"></div>
+			<div class="fbox" id="fstbox4"></div>
+			<div class="fbox" id="fstbox5"></div>
+			<div class="fbox" id="fstbox6"></div>
+		</div>
+		<div class="secondBox Box">
+			<div class="sbox" id="s1box1"></div>
+			<div class="sbox" id="s1box2"></div>
+			<div class="sbox" id="s1box3"></div>
+			<div class="sbox" id="s1box4"></div>
+		</div>
+		<div class="thirdBox Box">
+			<div class="tbox "id="t1box"></div>
+			<div class="tbox" id="t2box"></div>
+			<div class="tbox "id="t3box"></div>
+			<div class="tbox "id="t4box"></div>
+		</div>
+		<div class="fourthBox Box">
+			<div class="fobox "id="f1box"></div>
+			<div class="fobox "id="f2box"></div>
+			<div class="fobox "id="f3box"></div>
+			<div class="fobox "id="f4box"></div>
+			<div class="fobox "id="f5box"></div>
+		</div>
+		<div class="fiveBox Box">
+			<div class="fibox" id="fibox1"></div>
+			<div class="fibox" id="fibox2"></div>
+			<div class="fibox" id="fibox3"></div>
+			<div class="fibox" id="fibox4"></div>
+			<div class="fibox" id="fibox5"></div>
+			<div class="fibox" id="fibox6"></div>
+			<div class="fibox" id="fibox7"></div>
+			<div class="fibox" id="fibox8"></div>
+			<div class="fibox" id="fibox9"></div>
+			<div class="fibox" id="fibox10"></div>
+			<div class="fibox" id="fibox11"></div>
+			<div class="fibox" id="fibox12"></div>
+			<div class="fibox" id="fibox13"></div>
+			<div class="fibox" id="fibox14"></div>
+			<div class="fibox" id="fibox15"></div>
+			<div class="fibox" id="fibox16"></div>
+			<div class="fibox" id="fibox17"></div>
+			<div class="fibox" id="fibox18"></div>
+		</div>
+		<div class="sixthBox Box">
+			<div class="sibox " id="si1box"></div>
+			<div class="sibox " id="si2box"></div>
+			<div class="sibox " id="si3box"></div>
+			<div class="sibox " id="si4box"></div>
+			<div class="sibox " id="si5box"></div>
+			<div class="sibox " id="si6box"></div>
+			<div class="sibox " id="si7box"></div>
+			<div class="sibox " id="si8box"></div>
+			<div class="sibox " id="si9box"></div>
+			<div class="sibox " id="si10box"></div>
+			<div class="sibox " id="si11box"></div>
+			<div class="sibox " id="si12box"></div>
+		</div>
+
+		<div class="seventhBox Box">
+			<div class="sebox " id="se1box"></div>
+			<div class="sebox " id="se2box"></div>
+			<div class="sebox " id="se3box"></div>
+			<div class="sebox " id="se4box">
+				<div id="sc1box"></div>
+				<div id="sc2box"></div>
+				<div id="sc3box"></div>
+			</div>
+		</div>
+
+			<div class="eightBox Box">
+			<div class="eibox "id = "e1box"></div>
+			<div class="eibox "id = "e2box"></div>
+			<div class="eibox "id = "e3box"></div>
+			<div class="eibox "id = "e4box"></div>
+			<div class="eibox "id = "e5box"></div>
+			<div class="eibox "id = "e6box"></div>
+			<div class="eibox "id = "e7box"></div>
+			<div class="eibox "id = "e8box"></div>
+			<div class="eibox "id = "e9box"></div>
+		</div>
+		<div class="nineBox Box">
+			<div class="nibox " id="n1box"></div>
+			<div class="nibox " id="n2box"></div>
+			<div class="nibox " id="n3box"></div>
+			<div class="nibox " id="n4box"></div>
+			<div class="nibox " id="n5box"></div>
+		</div>
+	</div>
+</body>
+</html>

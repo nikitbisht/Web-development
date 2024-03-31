@@ -1,0 +1,19 @@
+#box{
+	width: 100px;
+	height: 100px;
+	background-color: greenyellow;
+	padding: 0 0.4rem;
+}
+.dark{
+	background-color: black;
+	color: white;
+}
+.dark .mode{
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+}
+.light{
+	background-color: white;
+	color: black;
+}

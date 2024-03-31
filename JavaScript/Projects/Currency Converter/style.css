@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f4e4ba;
+}
+.heading{
+	text-align: center;
+	font-family: cursive;
+	font-size: 2rem;
+}
+.container{
+	background-color: white;
+	border: 2px solid black;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	min-height: 45vh;
+	width: 30vw;
+}
+form{
+	margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+	border: none;
+	width: 100%;
+	outline: none;
+	border-radius: 0.7rem;
+}
+form input{
+	border: 1px solid lightgrey;
+	font-size: 1rem;
+	height: 3rem;
+	padding-left: 0.5rem;
+}
+.amount p{
+	margin-left: 0.3rem;
+	margin-bottom: 0.2rem;
+}
+
+.dropdown{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.dropdown i{
+	font-size: 1.4rem;
+	margin-top: 1.2rem;
+}
+
+.select-container img{
+	max-width: 1.75rem;
+}
+.select-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 6rem;
+	border-radius: 0.5rem;
+	border: 1px solid lightgrey;
+}
+
+.select-container select{
+	font-size: 1rem;
+	width: auto;
+}
+
+
+form button{
+	border: 1px solid lightgrey;
+	border-radius: 0.5rem;
+	height: 3rem;
+	background: #af4d98;
+	font-size: 1.2rem;
+	color: #fff;
+	cursor: pointer;
+}
+#exchange:hover{
+	background: #af4d65;
+}
+.from,.to{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.msg{
+	margin: 2rem 0 2rem 0;
+	text-align: center;
+	font-size: 1.099rem;
+	font-family: sans-serif;
+}
+#toggle{
+	font-size: 2rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	cursor: pointer;
+}
+
+.darkMode{
+	background-color: black;
+	color: white;
+}
+.darkMode .container{
+	background-color: black;
+	border: 2px solid white;
+	box-shadow: 0px 0px 30px red;
+}
+.darkMode select{
+	background-color: black;
+	color: white;
+}
+.darkMode input{
+	background-color: black;
+	color: white;
+}
+.darkMode input:focus{
+	box-shadow: 0 0 15px white;
+}
+
+/*.lightMode{
+	background-color: white;
+	color: black;
+}*/

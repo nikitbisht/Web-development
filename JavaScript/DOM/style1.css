@@ -1,0 +1,13 @@
+#box{
+	height: 200px;
+	width: 150px;
+	background: greenyellow;
+	color: red;
+	border: 1px solid black;
+}
+.myContent{
+	color: darkred;
+}
+.content{
+	background-color: greenyellow;
+}

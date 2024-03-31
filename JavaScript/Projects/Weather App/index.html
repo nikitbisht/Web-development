@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+
+			<div class="search">
+				<input type="text" placeholder="enter city name" spellcheck="false">
+				<button><img src="./images/search.png" alt=""></button>
+			</div>
+			<div class="error">
+				Invalid City Name
+			</div>
+			<div class="img-weather-container">
+				<img id="weather-img" src="./images/clouds.png" alt="">
+				<h1 id="degre">7°c</h1>
+				<h2 id="city" >New York</h2>
+			</div>
+
+			<div class="humidity-wind-container">
+				<div class="hw-container">
+					<img src="./images/humidity.png" alt="">
+					<div class="hw">
+						<p id="humidity">48%</p>
+						<p>Humidity</p>
+					</div>
+				</div>
+				<div class="hw-container">
+					<img src="./images/wind.png" alt="">
+					<div class="hw">
+						<p id="wind">10.20 km/h</p>
+						<p>Wind Speed</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="script.js" ></script>
+</body>
+</html>
+
+<!-- api key = "https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=863242cfb2b1d357e6093d9a4df19a4b&units=metric" -->

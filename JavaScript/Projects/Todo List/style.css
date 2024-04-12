@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.container{
+	margin: 1rem;
+	min-width: 40%;
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 0.8rem;
+	background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+	transition-property: hover;
+	transition-timing-function: easy-in;
+}
+.container:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 20px grey;
+}
+
+#heading{
+	color: white;
+	text-align: center;
+	word-spacing: 0.5rem;
+}
+.add-item-container{
+	margin: 1rem 0 1rem 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+#add-item{
+	width: 70%;
+	border: none;
+	font-size: 1rem;
+	border-radius: 05px;
+	padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+#add-item:focus{
+	outline: none;
+	box-shadow: 0 0 10px red;
+}
+#add-btn{
+	width: 20%;
+	font-size: 1.1rem;
+	background-color: red;
+	padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+	color: white;
+	border-radius: 05px;
+	cursor: pointer;
+}
+.item-name{
+	width:75%;
+}
+.list-item-container{
+	width: 100%;
+	margin: 1rem 0 1rem 0;
+}
+.list-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid white;
+	padding: 0.3rem 0.6rem;
+	margin: 0.5rem 1rem;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	color: #e6e6e3;
+}
+.remove-btn{
+	width: 23%;
+	background-color: limegreen;
+	font-size: 1rem;
+	padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+	color: black;
+	border-radius: 05px;
+	cursor: pointer;
+}
+
+.darkMode{
+	background-color: black;
+}
+.darkMode #toggle{
+	color: white;
+}
+.darkMode #add-item{
+	background-color: black;
+	color: white;
+	border: 1px solid grey;
+}
+.darkMode .container{
+	background-image: linear-gradient(black 10.8%, black 94.3% );
+	border: 2px solid white;
+}
+.darkMode #add-item:focus{
+	box-shadow: 0 0 8px greenyellow;
+}
+.darkMode .remove-btn:hover{
+	background-color: yellow;
+}
+.darkMode #add-btn:hover{
+	background-color: black;
+	border: 1px solid white;
+	box-shadow: 0 0 10px whitesmoke;
+}
+.darkMode .outerBox{
+	justify-content: flex-end;
+	background-color: white;
+	border: 2px solid white;
+}
+.darkMode .toggle-btn{
+	transform: translate(1px,-1px);
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/*toggle btn*/
+.toggle{
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+.outerBox{
+	width: 60px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	background-color: black;
+}
+.toggle-btn{
+	width: 30px;
+	height: 28px;
+	border: 2px solid black;
+	border-radius: 10px;
+	transform:translate(-1px,-1px);
+	cursor: pointer;
+	background-color: white;
+}

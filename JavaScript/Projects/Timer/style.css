@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border-radius:10px;
+    border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    box-shadow: 0 0 10px white;
+}
+.timer{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #111;
+    color: white;
+}
+.t-heading{
+    text-align: center;
+}
+.btn{
+    width: 5rem;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.timer-form{
+    display: flex;
+    flex-direction: column;
+}
+.input-sec{
+    color: white;
+    display: flex;
+}
+.button-sec{
+    text-align: center;
+}
+.st-btn{
+    background-color: lime;
+}
+.st-btn:hover{
+    box-shadow: 1px 0 10px lime;
+}
+
+#reset-btn{
+    background-color: rgb(255, 12, 12);
+    color: white;
+}
+#reset-btn:hover{
+    box-shadow: 0 1px 10px red;
+}
+
+.pause{
+    background-color: yellow;
+}
+.pause:hover{
+    box-shadow: 0 0 10px yellow;
+}
